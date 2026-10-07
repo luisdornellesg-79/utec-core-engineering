@@ -9,3 +9,7 @@ git config --global user.email "tu_correo@example.com"
 git config --global user.name "luisdornellesg-79"
 git config --global user.email "luis.dornelles.g@gmail.com"
 git config --global user.name "luisdornellesg-79"
+git add .
+git commit -m "Add Python fundamentals structured_output script"
+git branch -M main
+git push -u origin main
