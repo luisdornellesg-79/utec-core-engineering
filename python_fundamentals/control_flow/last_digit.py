@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!/usr/bin/env python3
 import random
 number = __import__('random').randint(-10000, 10000)
 
