@@ -1,7 +1,6 @@
 #!/usr/bin/env python3
-"""Módulo que define una clase Square vacía."""
+"""Module that defines an empty class Square."""
 
 
 class Square:
-    """Representa un cuadrado."""
-    pass
+    """Class that represents a square (empty for now)."""
