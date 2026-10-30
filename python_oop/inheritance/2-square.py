@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Módulo que define la clase Square basada en Rectangle con __str__ personalizado."""
+"""Módulo Square."""
 
 
 Rectangle = __import__('2-rectangle').Rectangle
