@@ -10,7 +10,7 @@ class Rectangle(BaseGeometry):
 
     def __init__(self, width, height):
         """Inicializa un rectángulo con ancho y alto validados.
-        
+
         Args:
             width (int): El ancho del rectángulo.
             height (int): El alto del rectángulo.
