@@ -1,9 +1,12 @@
 #!/usr/bin/env python3
-"""Módulo que define la clase Rectangle."""
+"""Módulo que define la clase Rectangle basada en BaseGeometry."""
 
 
-class Rectangle:
-    """Representa un rectángulo."""
+BaseGeometry = __import__('7-base_geometry').BaseGeometry
+
+
+class Rectangle(BaseGeometry):
+    """Representa un rectángulo que hereda de BaseGeometry."""
 
     def __init__(self, width, height):
         """Inicializa un rectángulo con ancho y alto validados.
@@ -12,16 +15,8 @@ class Rectangle:
             width (int): El ancho del rectángulo.
             height (int): El alto del rectángulo.
         """
-        if not isinstance(width, int) or isinstance(width, bool):
-            raise TypeError("width must be an integer")
-        if width <= 0:
-            raise ValueError("width must be greater than 0")
-
-        if not isinstance(height, int) or isinstance(height, bool):
-            raise TypeError("height must be an integer")
-        if height <= 0:
-            raise ValueError("height must be greater than 0")
-
+        self.integer_validator("width", width)
+        self.integer_validator("height", height)
         self.__width = width
         self.__height = height
 
